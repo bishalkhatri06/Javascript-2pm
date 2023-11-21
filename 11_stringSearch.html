@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Search</title>
+  </head>
+  <body>
+    <script>
+      const text = "Welcome to Dursikshya to read To programming language";
+      document.write(`${text}<br>`);
+
+      // .indexOf()
+      document.write(`${text.indexOf("to")}<br>`);
+      document.write(`${text.indexOf("to", 15)}<br>`);
+
+      // .lastIndexOf()
+      document.write(`${text.lastIndexOf("to")}<br>`);
+
+      // .search()
+      document.write(`${text.search("read")}<br>`);
+      document.write(`${text.search(/read/)}<br>`);
+
+      // .match()
+      let test = "The rain in SPAIN stays mainly in the plain";
+      document.write(`${test.match("ain")}<br>`);
+      document.write(`${test.match(/ain/gi)}<br>`);
+
+    //  .matchAll()
+    document.write(`${test.matchAll(/rain/g)}<br>`)
+
+    // .includes()
+    document.write(`${test.includes('in')}<br>`)
+
+    // startwith()
+    document.write(`${test.startsWith('The',5)}<br>`)
+
+    // endWith()
+    document.write(`${test.endsWith('The')}<br>`)
+
+    // NumberMethod
+    // .toString
+    let x=20
+    let y=toString(x)
+    document.write(`${typeof(x)}<br>`)
+    document.write(`${typeof(y)}<br>`)
+
+    z=23.6453
+    // .toFixed()
+    document.write(`${z.toFixed(2)}<br>`)
+
+    // .toPrecision()
+    document.write(`${z.toPrecision(2)}<br>`)
+
+    // .parseFloat()
+    // .parseInt()
+    // Number()
+    </script>
+  </body>
+</html>

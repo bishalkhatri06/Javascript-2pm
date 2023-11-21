@@ -1,0 +1,28 @@
+Regular Expression
+
+-> it is used to check the data format like strings, number etc.
+
+syntax and content used in regx
+/.../ -> regular expressions are written between these two symbols.
+^(cap) -> it checks from the start
+$ -> it checks from the end
+[a-z] -> matches only lowercase alphabets
+[A-Z] -> matches only uppercase alphabets
+[0-9] -> matches only numeric values
+[a-zA-Z] -> matches all alphabets
+[a-z0-9] -> matches alphanumeric characters
+
+for special characters use \
+eg: \@, \#, \., \,, \_, \s(space) etc
+
+{minlength, maxlength} -> {3,20}
+
+?= -> it means the position of any characters doesnot matter but must be pressent
+. -> matches a single character
+* -> matches one or more preceeding character
++ -> more repeatation
+
+	 /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+
+	/^([a-z])+$/
+	bishal.khatri_123@gmail.com

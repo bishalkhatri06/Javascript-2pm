@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+      const news = [
+        {
+          newsTitle: "First Title",
+          newsContent: "news content of the first title",
+        },
+        {
+          newsTitle: "Second Title",
+          newsContent: "news content of the second title",
+        },
+        {
+          newsTitle: "Third Title",
+          newsContent: "news content of the third title",
+        },
+      ];
+
+      // define showNews()
+      const showNews = () => {
+        setTimeout(() => {
+          result = "";
+          news.forEach((post) => {
+            result += `
+                    <li>${post.newsTitle}</li>
+                    <p>${post.newsContent}</p>
+                    `;
+          });
+          document.querySelector("div").innerHTML = `${result}`;
+        }, 3000);
+      };
+
+
+    //   define the function addNews with promise
+      const addNews=data=>{
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                news.push(data)
+                const error=false // write true to check 
+                if(!error){
+                    resolve()
+                }
+                else{
+                    reject('something went wrong')
+                }
+            },3000)
+        })
+      }
+
+
+    //   call the function addNews()
+      addNews({
+        newsTitle: "Fourth Title",
+        newsContent: "news content of the fourth title"
+      })
+      .then(showNews)
+      .catch((err)=>console.log(err))
+
+    </script>
+</body>
+</html>

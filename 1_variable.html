@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    <!-- 
+        Variable
+        - Variable is a container to store values.
+        - variables are the building blocks of any programming language.
+        - variable can be used to store reusable values.
+        - these values can be anything from numbers, boolean, string, and even a value return from a function.
+        - variable can be declare either by using var, let or const.
+        - while naming variable, there are some rules:
+            -> these are case sensitive.
+            -> can only begin with a letter, underscore('_') and '$' symbol but cannot use numbers.
+            -> it contains letters, numbers, underscore or $ symbol.
+            -> a variable name cannot be a reserved keyword and methods.
+        -> types
+            -> camel case : myFile
+            -> sentence case : MyFile
+            -> snake case: my_file_name
+        
+        - var, let => variables
+        -   const => constant
+
+        - var is for global scope
+        - let, const are for block scoped
+
+    redfined
+        - let, var can be redefined
+        - const cannot be redefined
+     -->
+    <script>
+        // var name='Dursikshya Institute'
+        // document.write(name)
+        // console.log(name)
+        // document.write(`<br>`)
+        // document.write(`hello ${name}`)
+
+        var a=10
+        let b=15
+        const pi=3.14
+
+        {
+            let c=5
+            a=20
+            b=25
+            // pi=1.2
+            document.write("<br>"+c)
+            document.write("<br>"+a)
+            document.write(`<br>`)
+            document.write(b)
+            document.write(`<br>`)
+            document.write(pi)
+        }
+
+        document.write("<br>"+ a)
+        document.write(`<br>`)
+        document.write(b)
+        document.write(`<br>`)
+        document.write(pi)
+        document.write("<br>"+c)
+
+    </script>
+</body>
+</html>

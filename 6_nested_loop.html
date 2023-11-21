@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested loop</title>
+  </head>
+  <body>
+    <script>
+      // Factorial fo 1 to 10
+    //   let n = 1;
+    //   while (n <= 10) {
+    //     fact = 1;
+    //     num = 1;
+    //     while (num <= n) {
+    //       fact = fact * num;
+    //       num++;
+    //     }
+    //     document.write(`Factorial of ${n} = ${fact}<br>`);
+    //     n++;
+    //   }
+
+    //   // multiplication table for 1 to 10
+    //   let number = 1;
+    //   do {
+    //     let count = 1;
+    //     do {
+    //       document.write(`${number} X ${count} = ${number * count}<br>`);
+    //       count++;
+    //     } while (count <= 10);
+    //     document.write(`<br>`);
+    //     number++;
+    //   } while (number <= 10);
+
+    //   nested for loop
+        // factorial for 1 to 10
+        // for(i=1;i<=10;i++){
+        //     fact=1
+        //     for(j=1;j<=i;j++){
+        //         fact=fact*j
+        //     }
+        //     document.write(`Factorial of ${i}= ${fact}<br>`)
+        // }
+
+        // multiplication table 
+        // for(i=1;i<=10;i++){
+        //     for(j=1;j<=10;j++){
+        //         document.write(`${i} X ${j} = ${i*j}<br>`)
+        //     }
+        //     document.write(`<br>`);
+        // }
+
+        // *        i=1, j=1
+        // **       i=2, j=1,2
+        // ***      i=3, j=1,2,3
+        // ****
+        // *****
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(`*`)
+            }
+            document.write(`<br>`);
+        }
+        document.write(`<br>`);
+        // reverse pattern
+        for(i=1;i<=5;i++){
+            for(j=5;j>=i;j--){
+                document.write(`*`)
+            }
+            document.write(`<br>`);
+        }
+
+        /*
+                            1    i=1 ,sp=5,1 , j=1,i
+                        1   2
+                    1   2   3
+                1   2   3   4
+            1   2   3   4   5
+        
+        */
+
+        for(i=1;i<=5;i++){
+            for(sp=5; sp>i;sp--){
+                document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+            }
+            for(j=1;j<=i;j++){
+                document.write(j + "&nbsp;&nbsp;")
+            }
+            document.write(`<br>`)
+        }
+
+
+    </script>
+  </body>
+</html>

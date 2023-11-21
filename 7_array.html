@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // array is a container to store multiple values
+        // values in array is called an element
+        // while accessing the single element from array, you must use indexing
+
+        let arr=[1,2,3,'abc',{'Name':'sudip','address':'Dang'},[5,6,7]]
+
+        document.write(arr)
+        document.write(`<br> type of arr:`+typeof(arr))
+
+        document.write(`<br>length:`+ arr.length)
+        document.write(`<br> the number is:`+ arr[0])
+        document.write('<br>Last element:'+ arr[arr.length-1])
+        document.write(`<br>`+arr[4].address)
+
+        // push(new_item) - to add new member element to the end of the array
+        arr.push('Dursikshya')
+        document.write(`<br>push result:`+arr)
+
+        arr.push('hello')
+        document.write(`<br>push result:`+arr)
+
+        // pop()
+        arr.pop()
+        document.write(`<br>pop result:`+arr)
+
+        // shift() - to remove first element from the arrary
+        arr.shift()
+        document.write(`<br>shift result:`+arr)
+
+        // unshift 
+        arr.unshift(10)
+        document.write(`<br>unshift result:`+arr)
+
+    // splice() to remove or add one or more element from the array at specific position
+    arr.splice(2,1,'ram','sita')
+    document.write(`<br>splice result:`+arr)
+
+    // sort()
+
+    // reverse()
+    arr.reverse()
+    document.write(`<br>reverse result:`+arr)
+
+    // slice(start,end) - creates new array using start index, and end index, excluding end
+
+    new_array= arr.slice(2,5)
+    document.write(`<br>${new_array}`)
+
+    let final_arr=arr.concat(new_array)
+    document.write(`<br>concate result:`+final_arr)
+
+
+    </script>
+</body>
+</html>

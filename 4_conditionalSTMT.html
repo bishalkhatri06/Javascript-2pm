@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // conditional statement - used for making decision
+        
+        /*
+        1. If statements
+            if(condition){
+                statement if condition is true
+            }
+        2. if-else statements
+            if(condtion){
+                statement if condition is true
+            }
+            else{
+                statement if condtion is false
+            }
+        3. if-else if-else....if-else
+            if(condtion){
+                statement if condition1 is true
+            }
+            else if(condtion){
+                statement if condtion2 is true
+            }
+            else if(..)
+            ...
+            else{
+                statement if all condtions are false
+            }
+        4. nested conditional statements
+            if(condition1){
+                if(conditionA){
+                    statement if condition1 and conditionA are true
+                }
+                else{
+                    statement if condition1 is true but conditionA is false
+                }
+            }
+            else{
+                statement if conditon1 is false
+            }
+
+        */
+
+        // let a=Number(prompt('Enter your age:'))
+        // if(a>=18){
+        //     document.write('You are eligible for vote')
+        // }
+        // else{
+        //     document.write('you are too young for vote.')
+        // }
+
+        // check even or odd
+        // let a=Number(prompt('Enter your age:'))
+        // if(a%2==0){
+        //     document.write(`${a} is even number`)
+        // }
+        // else{
+        //     document.write(`${a} is odd number`)
+        // }
+
+        // check positive and negative number
+        // let a=Number(prompt('Enter number:'))
+        // if(a<0){
+        //     document.write('the number is negative')
+        // }
+        // else if(a>0){
+        //     document.write('the number is positive')
+        // }
+        // else{
+        //     document.write('the number is zero')
+        // }
+
+        // check the greatest number among 3
+        // let a=5
+        // let b=8
+        // let c=9
+        // let d=1
+
+        // if((a>b && a>c) || a<d){
+        //     document.write(`${a} is greatest among 3`)
+        // }
+        // else if(b>a && b>c){
+        //     document.write(`${b} is greatest among 3`)
+        // }
+        // else{
+        //     document.write(`${c} is greatest among them`)
+        // }
+
+
+        // if(a>b){
+        //     if(a>c){
+        //         document.write(`${a} a is greatest among 3`)
+        //     }
+        //     else{
+        //         document.write(`${c} c is greatest among them`)
+        //     }
+        // }
+        // else{
+        //     if(b>c){
+        //         document.write(`${b} b is greatest among 3`)
+        //     }
+        //     else{
+        //         document.write(`${c} c is greatest among them`)
+        //     }
+        // }
+
+    // display days name according to given days no.
+    // let days = Number(prompt('Enter day number:'))
+    // if(days==1){
+    //     document.write('Sunday')
+    // }
+    // else if(days==2){
+    //     document.write('Monday')
+    // }
+    // else if(days==3){
+    //     document.write('Tuesday')
+    // }
+    // else if(days==4){
+    //     document.write('Wednesday')
+    // }
+    // else if(days==5){
+    //     document.write('Thursday')
+    // }
+    // else if(days==6){
+    //     document.write('Friday')
+    // }
+    // else if(days==7){
+    //     document.write('Saturday')
+    // }
+    // else{
+    //     document.write('Invalid Input')
+    // }
+
+    // Switch case
+    /*
+    switch(key){
+        case value1:
+            statement if key== value1
+        case value2:
+            statement if key==value2
+        case value3:
+            statement if key == value3
+        ....
+        default:
+            statement if key doesnot match with any case values.
+    }
+    */
+//    let n=Number(prompt('Enter a number(1-7):'))
+
+//    switch(n){
+//     case 1:
+//         document.write('Sunday')
+//         break
+//     case 2:
+//         document.write('Monday')
+//         break
+//     case 3:
+//         document.write('Tuesday')
+//         break
+//     case 4:
+//         document.write('Wednesday')
+//         break
+//     case 5:
+//         document.write('Thursday')
+//         break
+//     case 6:
+//         document.write('Friday')
+//         break
+//     case 7:
+//         document.write('Saturday')
+//         break
+//     default:
+//         document.write('Invalid Input')
+//    }
+
+//    calculator
+   num1= Number(prompt('Enter num1:'))
+   num2= Number(prompt('Enter num2:'))
+   operator= prompt('Select operator:')
+
+   switch(operator){
+    case '+':
+        document.write('Addition:',num1+num2)
+        break
+    case '-':
+        document.write('Substraction:',num1-num2)
+        break
+    default:
+        document.write('Invalid Operator')
+   }
+
+
+    </script>
+</body>
+</html>

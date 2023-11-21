@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of loop</title>
+</head>
+<body>
+    
+    <script>
+        // for of statements loops through the values of an iterable object.
+        // it lets you iterate over data structure such as arrays,maps and more
+        const fruits=['apple','mango','banana','grapes','cherry']
+
+        let names=''
+        for(let x of fruits){
+            names+=x+'&nbsp;'
+        }
+        document.write(`${names}`)
+        
+    </script>
+</body>
+</html>

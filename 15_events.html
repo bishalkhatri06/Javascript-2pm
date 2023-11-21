@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!--  An event is a signal that something has happend -->
+    
+        <!-- onclick -> when the mouse clicks on an html element(or tap on touch screen)
+        ondblclick -> double clicks on a html element
+        contextmenu -> when the mouse right-click on an element
+        mouseover/mouseout -> when the mouse curser comes over/ leaves an element
+        mousedown/mouseup -> when the mouse button is pressed/ released over an element
+        mousemove -> when a mouse is moves over an html elements.
+        onkeyup -> when key is pressed
+        onkeydown -> same as onkeyup but it shows first key pressed result only after the second key is pressed
+        onsubmit -> when form is submitted
+        onfocus -> when the visitor focuses on an element. eg: <input/>
+        onload -> when a page is loaded        -->
+        
+    <button onclick="demo()">Click here to see result</button>
+    <h3 id="result"></h3>
+
+    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" alt="image" width="300">
+    <br>
+    <button ondblclick="change()">Double Click</button>
+    <br><br>
+
+    <input type="password" id="psw" onkeyup="demoFucntion()">
+    <br>
+    <p class="result1"></p>
+
+    <script>
+        const demo=()=>{
+            // document.write(new Date())
+            document.getElementById("result").innerHTML=new Date()
+        }
+
+        const change=()=>{
+            document.querySelector('img').src='https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg'
+        }
+
+        const demoFucntion=()=>{
+            const inputValue=document.getElementById('psw').value
+            document.querySelector('.result1').innerHTML=inputValue
+        }
+        
+
+
+
+    </script>
+
+
+</body>
+</html>

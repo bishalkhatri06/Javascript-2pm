@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        let text='Welcome/to Dursikshya to/read To programming language'
+        document.write(`${text}<br>`)
+
+        // to count the length of string using .length
+        document.write(`${text.length}<br>`)
+
+        // methods for extracting a part of string
+        // .slice(start,end)
+        // .substring(start,end)
+        // .substr(start,length)
+        document.write(`${text.slice(0,7)}<br>`)
+        document.write(`${text.substring(4,15)}<br>`)
+        document.write(`${text.substr(4,15)}<br>`)
+
+        // replace string content
+        // .replace(rfrom, rto)
+        // .replaceAll(rfrom, rTo)
+        // document.write(`${text.replace('to','too')}<br>`)
+        // document.write(`${text.replaceAll('to','too')}<br>`)
+        document.write(`${text.replace(/to/g,'too')}<br>`)
+        document.write(`${text.replace(/to/gi,'too')}<br>`)
+
+        // converting string to lower and upper case
+        // .toLowerCase()
+        // .toUpperCase()
+        document.write(`${text.toUpperCase()}<br>`)
+        document.write(`${text.toLocaleLowerCase()}<br>`)
+
+        // .concat(firststr, secondstr) to join two or more string
+        let text1='hello'
+        let text2=text.concat(" ",text1,' ','student')
+        document.write(`${text2}<br>`)
+
+        // trim()
+        let test="    hello   "
+        document.write(`${test.trim()}<br>`)
+        document.write(`${test.trimStart()}<br>`)
+        document.write(`${test.trimEnd()}<br>`)
+
+        // .padStart() & .padEnd()
+        let text3='5'
+        let padded= text3.padStart(4,'1')
+        document.write(`${padded}<br>`)
+        let padded1=text3.padEnd(4,'0')
+        document.write(`${padded1}<br>`)
+
+        // extracting string character
+        // .charAt(), .charCodeAt(), property access[]
+        document.write(`${text.charAt(5)}<br>`)
+        document.write(`${text.charCodeAt(5)}<br>`)
+        document.write(`${text[5]}<br>`)
+
+        // .split()
+        document.write(`${text.split('/')}<br>`)
+        console.log(`${text.split('/')}`)
+
+    </script>
+</body>
+</html>

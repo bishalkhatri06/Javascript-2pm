@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+<body>
+    <script>
+        // reduce -> this method runs a function on every element of array and produce the single result and it works from left to right
+
+
+        const check=(acc,cv)=>{
+            console.log('accumulator:',acc)
+            console.log('current value:',cv)
+            return acc+cv
+        }
+
+        const numbers=[10,15,20,25,30,35,40,45,50,100]
+        const total=numbers.reduce(check,0)
+        document.write('the result is ',total)
+        document.write(`<br>`)
+
+        const max=numbers.reduce((a,b)=>Math.max(a,b))
+        document.write('max number:',max)
+        document.write(`<br>`)
+
+        const min= numbers.reduce((x,y)=>Math.min(x,y))
+        document.write('min number:',min)
+    </script>
+</body>
+</html>

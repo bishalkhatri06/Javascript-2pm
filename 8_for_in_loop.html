@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-in-loop</title>
+</head>
+<body>
+    <script>
+        // for in statement loops through the properties of an object
+        let student={
+            f_name:'Ram',
+            l_name:'Sharma',
+            age:21,
+            height:5.6
+        }
+
+        document.write(`${student['f_name']}<br>`)
+
+        let info=''
+        for(let x in student){
+            info+=student[x]+`<br>`
+        }
+        document.write(`${info}<br>`)
+
+    </script>
+    
+</body>
+</html>

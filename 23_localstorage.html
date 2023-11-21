@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <!-- <button onclick="remove()">Remove</button> -->
+    <button>Remove</button>
+    <script>
+        const key='name'
+        let value='Suraj Amgain'
+        localStorage.setItem(key,value)
+        const result=localStorage.getItem('name')
+        console.log(result)
+        document.write('Item Name: ',result)
+        document.write(`<br>`)
+        document.write('Item Name: ',result)
+
+        const remove=()=>{
+            localStorage.removeItem('name')
+        }
+
+        // addEventListener
+        document.querySelector('button').addEventListener('click',remove)
+
+        // JSON - javascript object notation
+        const student={
+            first_name: 'Sudip',
+            last_name:'Khanal',
+            age:20,
+            gender:'Male',
+            subject:['html','css','bootstrap','js','react']
+        }
+
+        // localstorage data must be in string
+        // localStorage.setItem('std',student)
+
+        const json_to_string=JSON.stringify(student)
+        localStorage.setItem('std',json_to_string)
+
+        const stdResult=localStorage.getItem('std')
+        console.log(stdResult)
+
+        const string_to_json= JSON.parse(stdResult)
+        console.log(string_to_json.subject[2])
+
+        // to set session storage
+        // sessionStorage.setItem('std',json_to_string)
+
+    </script>
+</body>
+</html>

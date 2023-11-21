@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>foreach</title>
+    </head>
+    <body>
+        <script>
+            // array iteration method operates on every array item.
+            // foreach() method calls a function for each array element.
+            let result=``
+            const number=[2,20,30,40,100]
+
+            // function demoFunction(num){
+            //     result += `<li>${num}</li>`
+            // }
+
+            // const demoFunction=(num)=>{
+            //     result += `<li>${num}</li>`
+            // }
+
+            // number.forEach(demoFunction)
+            number.forEach((num)=>result+=`<li>${num}</li>`)
+
+            document.write(`${result}`)
+        </script>
+        
+    </body>
+    </html>

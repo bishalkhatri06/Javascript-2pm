@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Loops - to perform same task repeadedly
+            start(initialize),
+            end(condition-check),
+            next(increment/decrement),
+            statements
+
+        1. while loop
+        syntax:
+            initialize
+            while(conditon-check){
+                statements
+                increment/decrement
+            }
+        
+        2. do - while loop
+        syntax:
+            initialize
+            do{
+              statement
+              increment/decrement
+            }
+            while(condition-check)
+
+        3. for loop
+        syntax:
+            for(initialization; condition-check; next){
+              statements
+            }
+
+        */
+
+      document.write("while loop");
+      // print 'hello world' 10 times
+      //   let n = 1;
+      //   while (n <= 10) {
+      //     document.write("Hello World<br>");
+      //     n++;
+      //   }
+      //   document.write("loop end");
+      document.write("<br><br>");
+      // print natural numbers 1 to 100
+      let num = 1;
+      while (num <= 100) {
+        document.write(num + " ");
+        num++;
+      }
+      document.write("<br><br> Do -while")
+      // do-while
+      let xyz=1
+      do{
+        document.write(xyz+ ' ')
+        xyz++
+      }while(xyz<=5)
+
+      // for loop
+      document.write("<br><br>for loop <br>")
+      for(let a=1; a<=100; a++){
+        document.write(a+' ')
+      }
+
+      document.write("<br><br>");
+      // print natual numbers 1 to 100 in reverse order
+      let count = 100;
+      while (count >= 1) {
+        document.write(count + " ");
+        count--;
+      }
+      document.write("<br><br>");
+    //   print odd numbers between 1 to 100
+      let a=1
+      while(a<=100){
+        document.write(a + ' ')
+        a+=2
+      }
+      document.write("<br><br>");
+    //  print even numbers between 1 to 100
+    let even=2
+      while(even<=100){
+        document.write(even + ' ')
+        even+=2
+      }
+      
+      document.write("<br><br>");
+    //  print 20 terms of the series 1,5,9,13,....
+      let x=1
+      let y=1
+      while(y<=20){
+        document.write(x+' ')
+        x+=4
+        y++
+      }
+      document.write("<br><br>value<br>")
+      // display multiples of 5 range between 50
+      // let value1=Number(prompt('Enter value:'))
+      // for(i=1;i<=value1;i++){
+      //   if(i%5==0){
+      //     document.write(i+' ')
+      //   }
+      // }
+      document.write("<br><br>value<br>")
+      let value2= Number(prompt('Enter value:'))
+      for(i=1; i<=value2;i++){
+        if(i%2==0){
+          document.write(i+ ' ')
+        }
+        else{
+          document.write(i+ ' ')
+        }
+      }
+
+    </script>
+  </body>
+</html>
